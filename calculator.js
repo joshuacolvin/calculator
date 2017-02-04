@@ -34,18 +34,26 @@ function nine () {
 
 }
 
-function plus () {
-
+function plus (num) {
+  return function () {
+    return arguments[0] + num;
+  };
 }
 
-function minus () {
-
+function minus (num) {
+  return function () {
+    return arguments[0] - num;
+  };
 }
 
-function times () {
-
+function times (num) {
+  return function () {
+    return arguments[0] * num;
+  };
 }
 
-function dividedBy () {
-
+function dividedBy (num) {
+  return function () {
+    return arguments[0] / num;
+  };
 }
